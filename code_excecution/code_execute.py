@@ -7,8 +7,10 @@ from dotenv import load_dotenv
 # Load the .env file
 load_dotenv()
 
-# Read the value
-rapid_api_token = os.getenv('rapid_api_token')
+# Read the value from environment
+# The README specifies `RAPID_API_TOKEN` so we
+# read this variable to avoid case mismatch issues
+rapid_api_token = os.getenv('RAPID_API_TOKEN')
 
 
 
